@@ -2,6 +2,10 @@
 
 A recreation of the classic Arcade Snake Game built entirely in Python. This project focuses on **Object-Oriented Programming (OOP)** principles to create modular, readable, and scalable code.
 
+📸 Game Play
+
+![Game Play](https://github.com/user-attachments/assets/f7eb4188-ffe9-4026-8624-e51102baa8f4)
+
 ## 🎮 Game Features
 
 * **Classic Mechanics:** Control the snake, eat food, and grow longer without hitting the walls or yourself.

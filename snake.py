@@ -53,4 +53,12 @@ class Snake:
         new_segment.speed("slow")
         self.segment.append(new_segment)
 
+    def reset(self):
+
+        for i in self.segment:   #to remove the ghost snake
+            i.goto(1000,1000)
+
+        self.segment.clear()
+        self.create_snake()
+        self.head = self.segment[0]
 

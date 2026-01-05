@@ -27,9 +27,11 @@ while game_on:
     time.sleep(0.1)
     snake.move()
     if snake.head.xcor()>(290) or snake.head.xcor()<(-290) or snake.head.ycor()>(290) or snake.head.ycor()<(-290):
-        scoreboard.goto(0.00,0.00)
-        scoreboard.write("Game Over", False, "center", font=("Frank", 20, "normal"))
-        game_on=False
+        scoreboard.reset_scoreboard()
+
+
+        snake.reset()
+
 
     #detect collision from food
     if snake.head.distance(food)< 20:
@@ -41,10 +43,17 @@ while game_on:
         if segment==snake.head:
             pass
         elif snake.head.distance(segment)<10:
-            scoreboard.goto(0.00, 0.00)
-            scoreboard.write("Game Over", False, "center", font=("Frank", 20, "normal"))
-            game_on=False
+            scoreboard.reset_scoreboard()
+
+
+
+            snake.reset()
+
+
+
 screen.exitonclick()
+
+
 
 
 
